@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!--created by Dev ideas -->
+	<title>Note App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<!DOCTYPE html>
+	<html>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+		integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar" style="position: fixed; z-index: 2;">
+		
+		<div><a style="font-size: 30px; margin-top: -15px; color: black;" class="btn" href="./me" ><i class="fa fa-home"></i></a></div>
+		<input type="text" placeholder="Search..">
+		<p>Date/Time: <span id="datetime"></span></p>
+		<div><a style="font-size: 30px; margin-top: -20px; color: black;" href="./exit"><i class="fa fa-sign-out" aria-hidden="true"></i></a></div>
+		
+	</nav>
+	<br><br><br>
+	<div class="container">
+		
+		<div class="dropd">
+			<button class="dropbtn" type="button" >
+				Open Web
+			</button>
+			<div class="dropdown-content" >
+				<a class="dropdown-item" href="https://www.iitbhilai.ac.in/">IITBHILAI</a>
+				<a class="dropdown-item" href="https://docs.python.org/3/">Python Documentation</a>
+				
+			</div>
+		</div>
+		<br />
+		<div class="dropd">
+			<button class="dropbtn" type="button" >
+				Competetive Programing
+			</button>
+			<div class="dropdown-content" >
+				<a class="dropdown-item" href="https://www.geeksforgeeks.org/">GeeksForGeeks</a>
+				<a class="dropdown-item" href="https://www.codechef.com/">Codechef</a>
+				<a class="dropdown-item" href="https://codeforces.com/">Codeforces</a>
+				
+			</div>
+		</div>
+		
+		<br />
+		<div class="dropd" >
+
+			<button class="dropbtn" type="button">
+				IC100 LECTURE NOTES
+			</button>
+			<div class="dropdown-content" >
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1yau6Sy3-vk_4nv3cEppOBJYreEXgkE5-/view?usp=sharing">LECTURE
+					1</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1Bp457pDjqfZmmTAmZnLrHHs5nIJG0nqy/view?usp=sharing">LECTURE
+					2</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1Wsaf9yhmiyRGeeGRdIKVfqWb8OYPGdLu/view?usp=sharing">LECTURE
+					3</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1FcOf7kIHND7owfF9fV14wG3xODnwfHle/view?usp=sharing">LECTURE
+					4</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1vBmfLRteUUEGHK49BseUukUVW_RDE1oJ/view?usp=sharing">LECTURE
+					5</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1lDCf04-piIvw-tKcBhoeb9lbt2lPiXOa/view?usp=sharing">LECTURE
+					6</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1RQPgOIlJSjYnL0YfRknibrOVq6rnjEq6/view?usp=sharing">LECTURE
+					7</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1PXwZSSsrb2pKK6khbsrq9JV8kbX2wNup/view?usp=sharing">LECTURE
+					8</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1PlKRl_quq_nA9M2Q4Nl4mR3lOM3MgfSn/view?usp=sharing">LECTURE
+					9</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1BZBlhH2lVrBPRTRjjVx9bxV1n27TzRYT/view?usp=sharing">LECTURE
+					10</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1R2u2oqxCfl08mRrzubMwrDy_6sUdiP9u/view?usp=sharing">LECTURE
+					11</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1rGpH-cVBcgR5Mg27KDjlq4QWPB1CBCZD/view?usp=sharing">LECTURE12</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1wSsz70b8lYt-GYptgWML6VSMoXq4V9bO/view?usp=sharing">LECTURE
+					13</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/1DU0YB5_2U2xPkzbOeNiBearFFaveG8L2/view?usp=sharing">LECTURE
+					14</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/135JezuK8w2XKUsyn_On71I2WOWFJs1Z8/view?usp=sharing">LECTURE
+					15</a>
+				<a class="dropdown-item"
+					href="https://drive.google.com/file/d/15JpRz8WdtvgQCpV1xcIPrM8JYtDSj4LR/view?usp=sharing">LECTURE16</a>
+				<a class="dropdown-item" href="https://piazza.com/">Join  IC100 Classroom</a>
+
+			</div>
+		</div>
+
+	
+		
+	
+		<br />
+		
+		<div class="dropd">
+			<button class="dropbtn" type="button" >
+				Developers Contact
+			</button>
+			<div class="dropdown-content" >
+				<!--	<a class="dropdown-item" href="https://www.jquery-az.com/bootstrap-4/">Developers Contact</a>-->
+				<a class="dropdown-item" href=" mailto:sudhirsharma@iitbhilai.ac.in">Sudhir Sharma</a>
+				<a class="dropdown-item" href="mailto:anshukumar@iitbhilai.ac.in">Anshu Kumar</a>
+				<a class="dropdown-item" href="mailto:sumitkumar@iitbhilai.ac.in">Sumit Maheswari</a>
+			</div>
+		</div>
+		<br />
+		<div class="dropd" >
+			<button class="dropbtn" type="button">
+				Others
+			</button>
+			<div class="dropdown-content" >
+				<a class="dropdown-item" href="./about">About </a>
+			
+			</div>
+		</div>
+	</div>
+		<div class="links">
+			<table style="width: 86%;">
+				{% if alltodo.links|length !=0 %}
+					
+				
+			{% for todo in alltodo.links %}
+				<center><tr>
+				<td style="padding-left: 30px; color: rgb(233, 128, 128);">	<h5>{{loop.index}}</h5></td>
+				
+				<td style="background-color: rgb(233, 128, 128); width: 90%; margin-right: 90px;
+						margin: 10px; color: rgb(2, 2, 2); border-radius:0px 0px 10px 10px; box-shadow: 2px 2px 8px rgb(255, 255, 255);
+								"><a href="{{todo.link}} " style="color: black;"><center>{{todo.title}}</center></td></a>
+								
+				</tr>
+				<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr></center>
+			{% endfor %} {% endif %}
+			</table>
+		</div>
+	
+
+	
+	<div class="table">
+		<br>
+		<center><h3>Task table</h3></center>
+		<table>
+			{% if alltodo.tasks|length !=0 %}
+			<tr>
+				<th>Sno</th>
+				<th> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Task &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+				<th style="margin-left: 50px;">Operation</th>
+			</tr>
+					{% endif %}
+
+				
+				{% for todo in alltodo.tasks %}
+				<tr>
+					<td>{{loop.index}}</td>
+					<center><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{todo.task}}</td></center>
+					<center><td><a href="/delete/{{todo.id}}" style="color: black;">Done/Delete</a></td></center>
+				</tr>
+				{% endfor %}
+
+</table>
+		
+			<div class="addtask">
+			<form action="./me" method="POST" >
+				<input autocomplete="off" type="text" name="addtask" required="required" placeholder="Add task">
+				
+				<button type="submit" value="submit" class="add2" >Add</button>
+				
+			</form>
+			</div>
+		
+		</div>
+
+		<div class="table">
+			<br>
+			<center><h3>Links table</h3></center>
+			<table>
+				{% if alltodo.links|length !=0 %}
+				<tr>
+					<th>Sno</th>
+					<th> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;Title &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
+					<th> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;Go to link &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>				
+					<th style="margin-left: 50px;">Operation</th>
+				</tr>
+						{% endif %}
+	
+					
+					{% for todo in alltodo.links %}
+					<tr>
+						<td>{{loop.index}}</td>
+						<center><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{todo.title}}</td></center>
+						<center><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="{{todo.link}}" style="color: black;">Go</a></td></center>
+						<center><td><a href="/delete3/{{todo.id}}" style="color: black;">Remove</a></td></center>
+					</tr>
+					{% endfor %}
+	
+	</table>
+			
+				<div class="addtask">
+				<form action="./anshu1" method="POST" >
+					<input autocomplete="off" type="text" name="addtitle" required="required" placeholder="Add Title">
+					<br><br>
+					<input autocomplete="off" type="text" name="addlink" required="required" placeholder="Add Link">
+
+					<button type="submit" value="submit" class="add2" >Add</button>
+					
+				</form>
+				</div>
+			
+			</div>
+			
+		
+</body>
+</html>
+</head>
+</style>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@800&display=swap');
+	.navbar{
+		display: flex;
+		width: 100%;
+		height: 50px;
+		background-color: rgb(233, 128, 128);
+		color: black;
+		box-shadow: 0px 5px 5px rgb(165, 163, 163);
+	}
+	
+.brand-logo {
+  height: 20px;
+  width: 20px;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPMX_lTWsLxMgW6CjvwGKGyHV8RYM_aSYsDg&usqp=CAU");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 4px #cbced1;
+}
+	.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: -10px;
+  margin-right: 16px;
+  font-size: 13px;
+  color: black;
+  background-color: rgb(214, 181, 181);
+}
+	.dropdown{
+		height: 100px;
+		width: 50%;
+		background-color: rgb(233, 128, 128);
+	}
+	.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  color: black;
+  width: 130%;
+  height: 100%;
+  background-color: rgb(233, 128, 128);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 3px 5px rgb(195, 164, 164);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropd {
+  position: relative;
+  display: flex;
+  margin-top: 0px;
+  margin-left: 6%;
+  display: inline-block;
+  
+  width: 25%;
+  
+ 
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(233, 128, 128);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px 10px 0px 0px;
+  border: none;
+  color: black;
+  width: 150%;
+  box-shadow: 5px 3px 5px rgb(195, 164, 164);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.container{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	margin-left: 34px;
+	
+}
+.table{
+	margin-top: 30px;
+	width: 94%;
+	margin: 40px;
+	background-color: rgb(233, 128, 128);
+	border-radius: 20px;
+	padding-bottom: 20px;
+}
+table{
+	width: 96%;
+	margin: 20px;
+}
+td{
+	margin-left:  50px;
+	color: rgb(39, 39, 36);
+	
+}
+th{
+	background-color:rgb(233, 128, 128) ;
+	color: rgb(255, 0, 0);
+	border-bottom: 2px solid black;
+}
+.addtask{
+	width: 100%;
+}
+.addtask input{
+	width: 80%;
+	margin-left: 30px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: rgb(214, 181, 181);
+	color: rgb(0, 0, 0);
+	padding-left: 10px;
+}
+.addtask button{
+	width: 10%;
+	margin-left: 30px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	margin-top: 0px;
+	box-shadow: -2px -2px 4px black;
+}
+.addtask button:hover{
+	background-color: rgb(255, 37, 37);
+	color: white;
+	cursor: pointer;
+	box-shadow: -2px -2px 4px rgb(12, 11, 11);
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(0, 0, 0);
+	color: white}
+
+/* Show the dropdown menu on hover */
+.dropd:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropd:hover .dropbtn {background-color: #000000;
+color: white}
+
+
+
+
+
+
+footer{
+   
+    left: 0px;
+    right: 0px;
+    height: 300px;
+    background-color: rgb(233, 128, 128);
+    width: 100%;
+}
+footer div.care{
+    display: flex;
+}
+footer div.care div.fflist{
+    width: 110px;
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+div.care div.vline{
+    background-color: rgb(22, 22, 22);
+    height: 200px;
+    margin-top: 20px;
+    width: 1px;
+    margin-left: 400px;
+}
+footer hr{
+    
+    width: 98%;
+    margin-left:10px;
+    border: 1px solid rgb(22, 22, 22);
+    margin-top: 10px;
+    font-weight: lighter;
+    height: 0px;
+}
+footer div h4{
+    color: rgb(14, 14, 14);
+    font-size: 13px;
+    margin-left: 30px;
+}
+div.flist{
+    display: grid;
+    padding-left: 0px;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 90px;
+    
+}
+div.care a{
+    font-size: 12px;
+    color:rgb(0, 0, 0);
+    margin-top: 0px;
+    padding-bottom: 5px;
+}
+div.fdes{
+    margin-top: 5px;
+    margin-left: 0px;
+    width: 150px;
+}
+div.ffdes h4{
+    width: 170px;
+}
+div.fdes h4{
+    
+    
+    color: rgb(0, 0, 0);
+}
+div.ffdes{
+    
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 170px;
+    
+}
+div.socials{
+    display: flex;
+}
+div.socials a{
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+div.socials a i{
+    color: yellow;
+}
+div.socials h2{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+div.pcards img{
+    height: 20px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+div.pcards{
+    display: flex;
+    margin-left: 50px;
+}
+
+@media (max-width:1400px){
+    footer{
+        width: 1400px;
+    }
+}
+@media (min-width:1500px){
+    footer div.care div.fflist{
+        margin-left: 70px;
+    }
+}
+@media (min-width:1600px){
+    footer div.care div.fflist{
+        margin-left: 90px;
+    }
+}
+@media (min-width:1500px){
+    footer div.socials{
+        margin-left: 90px;
+    }
+}
+@media (min-width:1600px){
+    footer div.socials{
+        margin-left: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+	
+</style>
+
+
+	
+
+	<script type="text/javascript">
+		
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (("0"+dt.getDate()).slice(-2)) +"/"+ (dt.getFullYear()) +" "+(dt.toLocaleTimeString());
+document.getElementById("datetime").style.color="black"
+
+		//create a selector.
+		const Form = document.querySelector(".addform");
+		const submitbutton = document.querySelector(".add");
+		const list = document.querySelector(".list");
+		const all_li = document.querySelectorAll(".list li");
+
+		const lang = navigator.language;
+
+		let date = new Date();
+
+		let dayName = date.toLocaleString(lang, {
+			weekday: "long"
+		});
+		
+
+		
+		
+		var total_li = all_li.length;
+		
+		//create new li or todo list.
+		
+		const generatetemplate = (todo) => {
+			const html = `<li>
+                      <input type="checkbox" id="todo_${total_li}">
+ 				     <label for="todo_${total_li}">
+ 					 <span class="check"></span>
+ 					  ${todo}
+					  
+ 				     </label>
+ 				     <label class="delete"></label>
+ 	              </li>`;
+			// list.innerHTML += html;
+		};
+		
+		//Get Input value & also Adding one by one number on the li ID.
+		
+		// function addTodos(e) {
+		// 	e.preventDefault();
+		// 	const todo = Form.addtask.value.trim();
+		// 	console.log(todo)
+		// 	if (todo.length) {
+		// 		total_li = total_li + 1;
+		// 		generatetemplate(todo);
+		// 		Form.reset();
+		// 	} else {
+		// 		alert("first type any task");
+		// 	}
+		// }
+
+		
+
+	
+	</script>
+
+
+</body>
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+body{
+  margin:0;
+  padding:0;
+  background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  font-family: 'Montserrat', sans-serif;
+}
+#wrapper{
+  width:100vw;
+  height:100vh;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: -200px;
+}
+.my-super-cool-btn{
+  position:relative;
+  text-decoration:none;
+  color:#fff;
+  letter-spacing:1px;
+  font-size:2rem;
+  box-sizing:border-box;
+}
+.my-super-cool-btn span{
+  position:relative;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:200px;
+  height:200px;
+}
+.my-super-cool-btn span:before{
+  content:'';
+  width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+  border-radius:100%;
+  border:7px solid #F3CF14;
+  box-sizing:border-box;
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+  box-shadow: 0 30px 85px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+}
+.my-super-cool-btn:hover span:before{
+  transform:scale(0.8);
+  box-shadow: 0 20px 55px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+}
+.my-super-cool-btn .dots-container{
+  opacity:0;
+  animation: intro 1.6s;
+  animation-fill-mode: forwards;
+}
+.my-super-cool-btn .dot{
+  width:8px;
+  height:8px;
+  display:block;
+  background-color:#F3CF14;
+  border-radius:100%;
+  position:absolute;
+  transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
+}
+.my-super-cool-btn .dot:nth-child(1){
+  top:50px;
+  left:50px;
+  transform:rotate(-140deg);
+  animation: swag1-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+.my-super-cool-btn .dot:nth-child(2){
+  top:50px;
+  right:50px;
+  transform:rotate(140deg);
+  animation: swag2-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+.my-super-cool-btn .dot:nth-child(3){
+  bottom:50px;
+  left:50px;
+  transform:rotate(140deg);
+  animation: swag3-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+.my-super-cool-btn .dot:nth-child(4){
+  bottom:50px;
+  right:50px;
+  transform:rotate(-140deg);
+  animation: swag4-out 0.3s;
+  animation-fill-mode: forwards;
+  opacity:0;
+}
+.my-super-cool-btn:hover .dot:nth-child(1){
+  animation: swag1 0.3s;
+  animation-fill-mode: forwards;
+}
+.my-super-cool-btn:hover .dot:nth-child(2){
+  animation: swag2 0.3s;
+  animation-fill-mode: forwards;
+}
+.my-super-cool-btn:hover .dot:nth-child(3){
+  animation: swag3 0.3s;
+  animation-fill-mode: forwards;
+}
+.my-super-cool-btn:hover .dot:nth-child(4){
+  animation: swag4 0.3s;
+  animation-fill-mode: forwards;
+}
+@keyframes intro {
+   0% {
+     opacity:0;
+  }
+  100% {
+     opacity:1;
+  }
+}
+@keyframes swag1 {
+   0% {
+     top:50px;
+     left:50px;
+     width:8px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+     top:20px;
+     left:20px;
+     width:8px;
+     opacity:1;
+  }
+}
+@keyframes swag1-out {
+   0% {
+     top:20px;
+     left:20px;
+     width:8px;
+  }
+  50% {
+     width:30px;
+    opacity:1;
+  }
+  100% {
+     top:50px;
+     left:50px;
+     width:8px;
+    opacity:0;
+  }
+}
+@keyframes swag2 {
+   0% {
+     top:50px;
+     right:50px;
+     width:8px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+     top:20px;
+     right:20px;
+     width:8px;
+     opacity:1;
+  }
+}
+@keyframes swag2-out {
+   0% {
+     top:20px;
+     right:20px;
+     width:8px;
+  }
+  50% {
+     width:30px;
+    opacity:1;
+  }
+  100% {
+     top:50px;
+     right:50px;
+     width:8px;
+    opacity:0;
+  }
+}
+@keyframes swag3 {
+   0% {
+     bottom:50px;
+     left:50px;
+     width:8px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+     bottom:20px;
+     left:20px;
+     width:8px;
+     opacity:1;
+  }
+}
+@keyframes swag3-out {
+   0% {
+     bottom:20px;
+     left:20px;
+     width:8px;
+  }
+  50% {
+     width:30px;
+    opacity:1;
+  }
+  100% {
+     bottom:50px;
+     left:50px;
+     width:8px;
+    opacity:0;
+  }
+}
+@keyframes swag4 {
+   0% {
+     bottom:50px;
+     right:50px;
+     width:8px;
+  }
+  50% {
+    width:30px;
+    opacity:1;
+  }
+  100% {
+     bottom:20px;
+     right:20px;
+     width:8px;
+     opacity:1;
+  }
+}
+@keyframes swag4-out {
+   0% {
+     bottom:20px;
+     right:20px;
+     width:8px;
+  }
+  50% {
+     width:30px;
+    opacity:1;
+  }
+  100% {
+     bottom:50px;
+     right:50px;
+     width:8px;
+    opacity:0;
+  }
+}
+span{
+	color: white;
+}
+
+</style>
+
+
+<div id="wrapper">
+	<a <button onclick="location.href='/jotting'" class="my-super-cool-btn">
+	  <div class="dots-container">
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+		<div class="dot"></div>
+	  </div>	
+	<span>JOTTING</span>
+	<div>
+		
+	
+	  
+	
+	</a>
+	</div>
+	<a <button onclick="location.href='/texteditor'" class="my-super-cool-btn">
+		<div class="dots-container">
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		</div>	
+
+
+	  <span>CREATE</span>
+  </div>
+
+</div>
+  <footer>
+	<div class="care">
+		  
+		  <div class="fflist">
+			  <h4>ABOUT</h4>
+			  <div class="flist">
+				  <a href="tel:9060163599">Contact Us</a>
+				  <a href="">About Us</a>
+				  <a href="">Careers</a>
+				  <a href="">Stories</a>
+				  <a href="">Blogs</a>
+				  </div>
+		  </div>
+		  
+		  
+		  <div class="fflist">
+			  <h4>SOCIALS</h4> 
+			  <div class="flist">
+				  <a href="https://www.facebook.com/profile.php?id=100029333530947">Facebook</a>
+				  <a href="https://www.instagram.com/anshukumar93.40/">Instagram</a>
+				  <a href="https://www.linkedin.com/in/anshu-kumar-363030203/">Linkedin</a>
+				  
+				  </div>
+		  </div>
+		  <div class="vline"></div>
+		  <div class="ffdes">
+			  <h4>Mail Us:</h4>
+			  <div class="fdes">
+				  <h4>Indian Institute of Technology Bhilai, Sejbahar, Pin-492015, Chattisgargh, India</h4>
+				  </div>
+		  </div>
+		  
+	  </div>
+	  <hr>
+</footer>
+
+  
+
+</html>
+
+
